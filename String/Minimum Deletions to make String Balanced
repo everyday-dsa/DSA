@@ -1,4 +1,4 @@
-//1st method : count a. run loop again and at index i count - total b before idx and count total a after idx. the ans is min(ans,a+b);
+//1st method(prefix Sum) : count a. run loop again and at index i count - total b before idx and count total a after idx. the ans is min(ans,a+b);
 TC : O(n)
 SC : O(1)
 
@@ -24,7 +24,7 @@ class Solution {
     }
 }
 
-//other method : run loop -count b else add ans+1(to delete a) and decrease countb by 1;
+//other method(GREEdy) : run loop -count b else add ans+1(to delete a) and decrease countb by 1;
 TC : O(n)
 SC : O( 1)
 public int minimumDeletions(String s) {
